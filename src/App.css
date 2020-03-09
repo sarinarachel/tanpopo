@@ -1,38 +1,63 @@
+html{
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 600px){
+  html{
+      font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  html{
+      font-size:20px;
+  }
+}
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body {
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-1 {
+  background-image: url("https://www.filmedinether.com/wp-content/uploads/2018/10/tampopo-ramen.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100vw;
+  z-index: -1;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title-back{
+  background-color: white;
+  height: 6rem;
+  width: 150vw;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  top: 15vh;
+  left: -25vw;
+  font-weight: bold;
+  color: rgb(141, 6, 6);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transform: rotate(-8deg);
 }
 
-.App-link {
-  color: #61dafb;
+.navigation{
+  position: relative;
+  top: -20px;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  font-weight: bold;
+  color: rgb(141, 6, 6);
 }
