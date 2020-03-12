@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "88787d2e486b5effda9036262704453d",
+    "revision": "ba5b7c0928ba4c8ca17ea47ad3deee45",
     "url": "/tanpopo/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tanpopo/static/css/2.008c07f9.chunk.css"
   },
   {
-    "revision": "313ffd337d3cd61f1096",
-    "url": "/tanpopo/static/css/main.8658efe4.chunk.css"
+    "revision": "f54fe5042d48680e2e77",
+    "url": "/tanpopo/static/css/main.a8f7b1e0.chunk.css"
   },
   {
     "revision": "77654dfcac3c27c7b235",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tanpopo/static/js/2.54457a29.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "313ffd337d3cd61f1096",
-    "url": "/tanpopo/static/js/main.318dd3f6.chunk.js"
+    "revision": "f54fe5042d48680e2e77",
+    "url": "/tanpopo/static/js/main.e110f306.chunk.js"
   },
   {
     "revision": "0307ab224319b92f7bac",

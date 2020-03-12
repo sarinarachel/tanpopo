@@ -140,9 +140,10 @@ function Body(){
       </Box>
       
       <Box className="embed">
-        <iframe width="80%" height="400px"
-          title="ramen-master"
-          src="http://www.youtube.com/embed/6WrkdTrrwew">
+        <iframe width="80%" height="400px" title="ramen-master"
+          src="https://www.youtube.com/embed/6WrkdTrrwew?start=19" 
+          frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
         </iframe>
       </Box>
       <Box className="para">
