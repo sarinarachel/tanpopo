@@ -9,6 +9,7 @@ import '@brainhubeu/react-carousel/lib/style.css';
 import { ArrowLeft, ArrowRight } from '@material-ui/icons';
 import { animateScroll as scroll } from "react-scroll";
 
+//localized material ui
 const theme = createMuiTheme({}, jaJP);
 
 function App() {
