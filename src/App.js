@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
 import './App.css';
-import { Box, Button, ButtonGroup, Container } from '@material-ui/core';
+import { Box, Button, ButtonGroup, Container, ListItem } from '@material-ui/core';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 import { jaJP } from '@material-ui/core/locale';
 import Image from 'material-ui-image';
@@ -147,7 +147,46 @@ function Body(){
         </iframe>
       </Box>
       <Box className="para">
-        最初の老人の厳しい食べる方じゃなくて、自由に食べるほうがいいです。あとはスパゲティーのシーンから先生が音無で食べなくてはいけないと言いますが、彼女たちはそうしないで食べます。らめんはカシュアルな食べ物だから、カシュアルで食べる方がいいです。
+        映画の冒頭でガンがラーメンの食べ方に対する本の中で、ラーメンを４０年間勉強した老人は「正しい食べ方」を説明します。例えば：
+        <ListItem>
+         -最初はらめんをよく見ます
+        </ListItem>
+        <ListItem>
+         -丼の善良(Excellence) 、らめんの匂いを吸い込みながら観賞して
+        </ListItem>
+        <ListItem>
+          -箸の先でラーメンの表面を撫ぜる
+        </ListItem>
+        <ListItem>
+          -めんから食べ始めます
+        </ListItem>
+      </Box>
+      <Box className="para">
+        ガンはそういう説明を読んだあと、「ちくしょう！」を怒鳴って、本を冷やかしました。この場面から監督が言いたいことはラーメンの食べ方はそんな厳しくなくて、自由だと言えるのではないでしょうか。ラーメンはカシュアルな食べ物だから、カシュアルで食べる方がいいです。
+      </Box>
+      <Box className="para">
+        そして、他の食べ方に対する面白いシーンもあります。スパゲティーの先生が生徒に外国で正しい食べ方を教えます。でも、もう一度その厳しい食べ方を冷やかします。その場面も見ましょう！
+      </Box>
+      <Box className="embed">
+      <iframe width="80%" height="400px" title="spaget"
+        src="https://www.youtube.com/embed/sNAZmLmyCJk?start=34" 
+        frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+      </Box>
+      <Box className="para">
+        日本の文化に麺を食べる時に音を出すとは普通で、美味しくなって食べやすいからです。でも、外国ですすって食べるのは失礼と言われています。だから、この先生は「音を立てないように召し上がっていただきます。」と「外国では絶対許されないのです。」と言います。しかし、レストランで麺を食べている外国人は音を出して、すすって食べます。そのあと、生徒と先生も諦めて、大きい音を出してスパゲティーを食べます。
+      </Box>
+      <Box className="para">
+        この面白い場面も麺の食べ方の自由を表します。厳しい食べ方は不合理で諦めたほうがいいでしょうか。監督は自由にずるずるにラーメン（パスタも）を食べてもいいということを伝えたかったでしょう。
+      </Box>
+      <Box className="para">
+        「ずるずる」と言えば、タンポポにあるラーメンのオノマトペを見ましょう。
+      </Box>
+    </Box>
+
+    <Box className="section">
+      <Box className="title" >
+        ラーメンのオノマトペ
       </Box>
     </Box>
   </Container>
