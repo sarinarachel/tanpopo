@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React from 'react';
 import './App.css';
 import { Box, Button, ButtonGroup, Container, ListItem } from '@material-ui/core';
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
@@ -7,26 +7,17 @@ import Image from 'material-ui-image';
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 import { ArrowLeft, ArrowRight } from '@material-ui/icons';
+import { animateScroll as scroll } from "react-scroll";
 
 const theme = createMuiTheme({}, jaJP);
 
-const context = React.createContext()
-
 function App() {
-  const [state, setState] = useState({
-    searchTerm:''
-  })
-  return <context.Provider value={{
-    ...state, 
-    set: v=> setState(current=> {
-      return{...current, ...v}})
-  }}>
-    <ThemeProvider theme={theme}>
-      <Header />
-      <Navigation />
-      <Body />
-    </ThemeProvider>
-  </context.Provider>
+  return( <ThemeProvider theme={theme}>
+    <Header />
+    <Navigation />
+    <Body />
+  </ThemeProvider>
+  )
 }
 
 function Header(){
@@ -41,13 +32,12 @@ function Header(){
 }
 
 function Navigation(){
-  const ctx = useContext(context)
   return(
     <Container className="nav-wrap" >
       <ButtonGroup className="navigation" size="large" variant="contained" color="primary" aria-label="contained primary button group">
-        <Button>タンポポの映画</Button>
-        <Button>ラーメンの食べ方</Button>
-        <Button>ラーメンのオノマトペ</Button>
+        <Button onClick={() => scroll.scrollTo(450)}>タンポポの映画</Button>
+        <Button onClick={() => scroll.scrollTo(1300)}>ラーメンの食べ方</Button>
+        <Button onClick={() => scroll.scrollTo(4000)}>ラーメンのオノマトペ</Button>
       </ButtonGroup>
     </Container>
   )
@@ -56,7 +46,7 @@ function Navigation(){
 function Body(){
   return(
   <Container className="body" maxWidth="md">
-    <Box className="section">
+    <Box id="section1" className="section">
       <Box className="title" >
         タンポポの映画
       </Box>
@@ -187,6 +177,39 @@ function Body(){
     <Box className="section">
       <Box className="title" >
         ラーメンのオノマトペ
+      </Box>
+      <Box className="para">
+        タンポポからいくつかラーメンのオノマトペ（擬音語や擬態語）を学ぶことができました。下に書き置きます。
+      </Box>
+      <img alt="slurping" className="float"
+        src="https://nationalpostcom.files.wordpress.com/2016/12/tam2.jpg?quality=80&strip=all&w=780">
+      </img>
+      <Box>
+        <Box className="bold">ズルズル: slurp</Box>
+        <Box className="para">ラーメンをズルズルと食べるのは美味しい。</Box>
+      </Box>
+      <Box>
+        <Box className="bold">キラキラ: sparkling</Box>
+        <Box className="para">スープの表面にキラキラと夢想の油のたま。</Box>
+      </Box>
+      <Box>
+        <Box className="bold">グラグラ: boiling</Box>
+        <Box className="para">お湯がグラグラします。</Box>
+      </Box>
+      <Box>
+        <Box className="bold">つるつる: smooth</Box>
+        <Box className="bold">シコシコ: chewy</Box>
+        <Box className="para">この麺最高でしょう。つるつるのシコシコです。</Box>
+      </Box>
+      <Box className="para">ラーメンの感じを描くためにこのオノマトペが使えます。</Box>
+
+      <Box className="grey">
+        <Box className="finone">
+          これでタンポポ映画からラーメンについて学べたことを終わります。
+        </Box>
+        <Box className="fintwo">
+          読んでくれてありがとうございます！
+        </Box>
       </Box>
     </Box>
   </Container>

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tanpopo/precache-manifest.1563d110ea74fd33a1f5a53f1397187b.js"
+  "/tanpopo/precache-manifest.35221f4a4082d14992ad54474b48a7a1.js"
 );
 
 self.addEventListener('message', (event) => {

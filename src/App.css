@@ -167,3 +167,26 @@ html{
   justify-content: center;
   display: flex;
 }
+
+.float{
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.finone{
+  font-size: 1.5rem;
+  color: rgb(141, 6, 6);
+  text-align: center;
+}
+
+.fintwo{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(141, 6, 6);
+  text-align: center;
+}
